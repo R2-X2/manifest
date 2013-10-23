@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="r2x2"
-           fetch="https://github.com/" />
+           fetch="https://github.com/R2-X2" />
 
   <remote  name="aosp"
 	   fetch="https://android.googlesource.com"
@@ -13,7 +13,7 @@
 	   review="gerrit.aokp.co" />
 
   <remote  name="cm"
-	   fetch="https://github.com/"
+	   fetch="https://github.com/CyanogenMod"
 	   review="review.cyanogenmod.com" />
 
   <remote  name="github"
@@ -24,38 +24,52 @@
 	   sync-j="24" />
 
   <!-- R2-X2 -->
-  
-  
-  <!-- Base -->
 
-  <project path="manifest" name="R2-X2/manifest" remote="r2x2" revision="android-4.3.1_r1" />
+  <project path="manifest" name="manifest" remote="r2x2" revision="android-4.3.1_r1" />
+
+  <project path="device/htc/pyramid" name="device_htc_pyramid" remote="r2x2" revision="android-4.3.1_r1" />
+  <project path="device/htc/msm8660-common" name="device_htc_msm8660-common" remote="r2x2" revision="android-4.3.1_r1" />
+
+  <project path="kernel/htc/msm8660" name="kernel_htc_msm8660" remote="r2x2" revision="android-4.3.1_r1" />
+
+  <project path="vendor/htc/pyramid" name="vendor_htc_pyramid" remote="r2x2" revision="android-4.3.1_r1" />
+  <project path="vendor/r2x2" name="vendor_r2x2" remote="r2x2" revision="android-4.3.1_r1" />
   
-  <!-- Devices -->
+  <!-- Evervolv -->
   
+  <project path="build" name="Evervolv/android_build" remote="github" revision="jellybean-4.3">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   
+  <!-- koush -->
   
-  <!-- Hardware -->
+  <project path="external/koush/ion" name="koush/ion" remote="github" revision="master" />
+  <project path="external/koush/AndroidAsync" name="koush/AndroidAsync" remote="github" revision="master" />
+  <project path="external/koush/Superuser" name="koush/Superuser" remote="github" revision="master" />
+  <project path="external/koush/Widgets" name="koush/Widgets" remote="github" revision="master" />
   
+  <!-- Team-Hydra -->
   
-  
-  <!-- Packages -->
-  
-  
-  
-  <!-- Vendors -->
-  
-  
+  <project path="hardware/libhardware_legacy" name="Team-Hydra/android_hardware_libhardware_legacy" remote="github" revision="refs/heads/cm-10.2" groups="pdk" />
+  <project path="hardware/qcom/display-legacy" name="Team-Hydra/android_hardware_qcom_display-legacy" remote="github" revision="refs/heads/cm-10.2" />
+  <project path="hardware/qcom/gps-legacy" name="Team-Hydra/android_hardware_qcom_gps-legacy" remote="github" revision="refs/heads/cm-10.2" />
+  <project path="hardware/qcom/media-legacy" name="Team-Hydra/android_hardware_qcom_media-legacy" remote="github" revision="refs/heads/cm-10.2" />
   
   
   <!-- AOKP -->
   
   
   
+  <!-- CyanogenMod -->
   
-  <!-- CM -->
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf"remote="cm" revision="refs/heads/cm-10.2"  groups="caf" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf"remote="cm" revision="refs/heads/cm-10.2"  groups="caf" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="refs/heads/cm-10.2" groups="qcom" />
+  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf"remote="cm" revision="refs/heads/cm-10.2"  groups="caf" />
   
+  <project path="system/qcom" name="android_system_qcom"remote="cm" revision="refs/heads/cm-10.2"  groups="qcom" />
   
-  
+  <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="cm" revision="refs/heads/cm-10.2" />
   
   <!-- AOSP -->
   
