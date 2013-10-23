@@ -34,8 +34,6 @@
 
   <project path="vendor/htc/pyramid" name="vendor_htc_pyramid" remote="r2x2" revision="android-4.3.1_r1" />
   <project path="vendor/r2x2" name="vendor_r2x2" remote="r2x2" revision="android-4.3.1_r1" />
-  
-  <!-- Evervolv -->
 
   <!-- koush 
   
@@ -60,6 +58,8 @@
   
   <!-- CyanogenMod -->
   
+  <project path="bionic" name="android_bionic" remote="cm" revision="refs/heads/cm-10.2" />
+  
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="cm" revision="refs/heads/cm-10.2" groups="caf" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" revision="refs/heads/cm-10.2" groups="caf" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="refs/heads/cm-10.2" groups="qcom" />
@@ -75,7 +75,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+  <!-- <project path="bionic" name="platform/bionic" groups="pdk" /> -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
