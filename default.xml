@@ -37,12 +37,14 @@
   
   <!-- Evervolv -->
 
-  <!-- koush -->
+  <!-- koush 
   
   <project path="external/koush/ion" name="koush/ion" remote="github" revision="master" />
   <project path="external/koush/AndroidAsync" name="koush/AndroidAsync" remote="github" revision="master" />
   <project path="external/koush/Superuser" name="koush/Superuser" remote="github" revision="master" />
   <project path="external/koush/Widgets" name="koush/Widgets" remote="github" revision="master" />
+  
+  -->
   
   <!-- Team-Hydra -->
   
