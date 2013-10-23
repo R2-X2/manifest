@@ -36,12 +36,6 @@
   <project path="vendor/r2x2" name="vendor_r2x2" remote="r2x2" revision="android-4.3.1_r1" />
   
   <!-- Evervolv -->
-  
-  <project path="bionic" name="Evervolv/android_bionic" remote="github" revision="jellybean-4.3" />
-  
-  <project path="build" name="Evervolv/android_build" remote="github" revision="jellybean-4.3">
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
 
   <!-- koush -->
   
@@ -75,7 +69,11 @@
   
   <!-- AOSP -->
   
+  <project path="build" name="platform/build" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
+  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
