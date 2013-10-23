@@ -37,10 +37,12 @@
   
   <!-- Evervolv -->
   
+  <project path="bionic" name="Evervolv/android_bionic" remote="github" revision="jellybean-4.3" />
+  
   <project path="build" name="Evervolv/android_build" remote="github" revision="jellybean-4.3">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  
+
   <!-- koush -->
   
   <project path="external/koush/ion" name="koush/ion" remote="github" revision="master" />
@@ -74,7 +76,6 @@
   <!-- AOSP -->
   
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
