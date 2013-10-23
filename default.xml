@@ -33,7 +33,7 @@
   <project path="kernel/htc/msm8660" name="kernel_htc_msm8660" remote="r2x2" revision="android-4.3.1_r1" />
 
   <project path="vendor/htc/pyramid" name="vendor_htc_pyramid" remote="r2x2" revision="android-4.3.1_r1" />
-  <!--<project path="vendor/r2x2" name="vendor_r2x2" remote="r2x2" revision="android-4.3.1_r1" /-->
+  <project path="vendor/r2x2" name="vendor_r2x2" remote="r2x2" revision="android-4.3.1_r1" />
   
   <!-- Evervolv -->
 
