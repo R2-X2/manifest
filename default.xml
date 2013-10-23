@@ -69,7 +69,7 @@
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="cm" revision="refs/heads/cm-10.2" groups="qcom" />
   <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="cm" revision="refs/heads/cm-10.2" groups="caf" />
   
-  <project path="system/qcom" name="android_system_qcom"remote="cm" revision="refs/heads/cm-10.2"  groups="qcom" />
+  <project path="system/qcom" name="android_system_qcom" remote="cm" revision="refs/heads/cm-10.2" groups="qcom" />
   
   <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="cm" revision="refs/heads/cm-10.2" />
   
