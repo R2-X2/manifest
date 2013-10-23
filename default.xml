@@ -53,12 +53,17 @@
   
   
   <!-- AOKP -->
-  
-  
-  
-  <!-- CyanogenMod -->
+
+
+
+  <!-- ParanoidAndroid -->
   
   <project path="bionic" name="ParanoidAndroid/android_bionic" remote="github" revision="jb43" />
+  <project path="biuld" name="ParanoidAndroid/android_build" remote="github" revision="jb43">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  
+  <!-- CyanogenMod -->
   
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="cm" revision="refs/heads/cm-10.2" groups="caf" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" revision="refs/heads/cm-10.2" groups="caf" />
@@ -71,11 +76,16 @@
   
   <!-- AOSP -->
   
+  <!-- 
+
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+  </project> 
+  <project path="bionic" name="platform/bionic" groups="pdk" />
+
+  -->
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <!-- <project path="bionic" name="platform/bionic" groups="pdk" /> -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
